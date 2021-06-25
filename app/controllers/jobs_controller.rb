@@ -23,4 +23,8 @@ class JobsController < ApplicationController
         render json: newJob
     end
 
+    def destroy
+        @job.destroy
+    end
+
 end
